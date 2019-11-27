@@ -23,6 +23,12 @@ public class PokemonTypeServiceImpl implements PokemonTypeService {
         return list;
     }
 
+    public PokemonType getPokemonType(int n) {
+        var url = this.url + "/pokemon-types/" + n;
+        PokemonType p = restTemplate.getForObject(url, PokemonType.class);
+        return p;
+    }
+
     @Autowired
     void setRestTemplate(RestTemplate restTemplate) {
        this.restTemplate = restTemplate;

@@ -1,5 +1,7 @@
 package com.ifi.trainer_ui.trainers.bo;
 
+import com.ifi.trainer_ui.pokemonTypes.bo.PokemonType;
+
 public class Pokemon {
 
     public Pokemon() {
@@ -13,6 +15,8 @@ public class Pokemon {
     private int pokemonType;
 
     private int level;
+
+    private PokemonType pokemonTypeDetails;
 
     public int getPokemonType() {
         return pokemonType;
@@ -28,5 +32,9 @@ public class Pokemon {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public void setPokemonType(PokemonType pokemonType) {
+        this.pokemonTypeDetails = pokemonType;
     }
 }

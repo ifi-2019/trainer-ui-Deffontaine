@@ -1,0 +1,35 @@
+{{> layout/header}}
+
+<body>
+
+<div class="container">
+    <h1 class="pt-md-5 pb-md-5">Trainer Details</h1>
+    <div class="card-deck">
+
+
+    <div class="col-md-3">
+        <div class="card shadow-sm mb-3">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">
+                    <span class="badge badge-secondary">{{trainerDetails.name}}</span>
+                </h4>
+            </div>
+
+            <div>
+                {{#trainerDetails.team}}
+                <div>
+                    <p class="badge badge-secondary">Pokemon : {{pokemonTypeDetails.name}}</p>
+                    <p class="badge badge-secondary">Id : {{pokemonTypeDetails.id}}</p>
+                    <img class="card-img-top" src="{{pokemonTypeDetails.sprites.front_default}}" alt="Pokemon img"/>
+                </div>
+                {{/trainerDetails.team}}
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
