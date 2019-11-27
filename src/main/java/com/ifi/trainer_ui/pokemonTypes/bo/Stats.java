@@ -2,6 +2,11 @@ package com.ifi.trainer_ui.pokemonTypes.bo;
 
 public class Stats {
 
+    private Integer speed;
+    private Integer defense;
+    private Integer attack;
+    private Integer hp;
+
     public Integer getSpeed() {
         return speed;
     }
@@ -33,9 +38,4 @@ public class Stats {
     public void setHp(Integer hp) {
         this.hp = hp;
     }
-
-    private Integer speed;
-    private Integer defense;
-    private Integer attack;
-    private Integer hp;
 }

@@ -2,6 +2,9 @@ package com.ifi.trainer_ui.pokemonTypes.bo;
 
 public class Sprites {
 
+    private String back_default;
+    private String front_default;
+
     public String getBack_default() {
         return back_default;
     }
@@ -18,6 +21,5 @@ public class Sprites {
         this.front_default = front_default;
     }
 
-    private String back_default;
-    private String front_default;
+
 }

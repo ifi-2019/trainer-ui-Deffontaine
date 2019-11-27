@@ -1,0 +1,32 @@
+package com.ifi.trainer_ui.trainers.bo;
+
+public class Pokemon {
+
+    public Pokemon() {
+    }
+
+    public Pokemon(int pokemonType, int level) {
+        this.pokemonType = pokemonType;
+        this.level = level;
+    }
+
+    private int pokemonType;
+
+    private int level;
+
+    public int getPokemonType() {
+        return pokemonType;
+    }
+
+    public void setPokemonType(int pokemonType) {
+        this.pokemonType = pokemonType;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+}
