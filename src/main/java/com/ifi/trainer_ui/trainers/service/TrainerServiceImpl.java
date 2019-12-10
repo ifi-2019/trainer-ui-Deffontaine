@@ -20,10 +20,14 @@ public class TrainerServiceImpl implements TrainerService {
     private RestTemplate restTemplate;
     private PokemonTypeService pokemonTypeService;
 
-    public List<Trainer> listTrainers() {
-        var url = this.url + "/trainers/";
+    public List<Trainer> listTrainers(String name) {
+        var url = this.url + "/trainers/all/" + name;
         Trainer[] l = restTemplate.getForObject(url, Trainer[].class);
         List<Trainer> list = Arrays.asList(l);
+
+        for (Trainer t : list) {
+            t = this.addTeam(t);
+        }
         return list;
     }
 
