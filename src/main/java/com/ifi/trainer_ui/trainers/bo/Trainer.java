@@ -1,8 +1,16 @@
 package com.ifi.trainer_ui.trainers.bo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Trainer {
+
+
+    private String name;
+
+    private List<Pokemon> team = new ArrayList<>();
+
+    private String password;
 
     public Trainer() {
     }
@@ -10,10 +18,6 @@ public class Trainer {
     public Trainer(String name) {
         this.name = name;
     }
-
-    private String name;
-
-    private List<Pokemon> team;
 
     public String getName() {
         return name;
@@ -29,5 +33,13 @@ public class Trainer {
 
     public void setTeam(List<Pokemon> team) {
         this.team = team;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
